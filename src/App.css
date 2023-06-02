@@ -1,42 +1,67 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background-color: #282c34;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 30px;
+}
+
+.app {
+  margin: 0 auto 300px;
+  max-width: 600px;
+  background-color: #efefef;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  margin-bottom: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input {
+  box-sizing: border-box;
 }
 
-.card {
-  padding: 2em;
+button {
+  background-color: #333974;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+  opacity: 1;
+}
+
+.complete {
+  background-color: #5cb85c;
+}
+
+.remove {
+  background-color: #d9534f;
+}
+
+todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 10px;
 }
